@@ -60,5 +60,10 @@ if __name__ == '__main__':
         [0, 0, 8,   0, 3, 9,    5, 0, 0],
         [5, 0, 0,   0, 7, 0,    0, 0, 0]
     ]
-    print(solve_sudoku(example_board))
-    print(example_board)
+    tf = solve_sudoku(example_board)
+    print(tf)
+    if tf:
+        print("Solution is:")
+        for i in range(9):
+            print(example_board[i])
+
